@@ -1,0 +1,400 @@
+{
+	"info": {
+		"_postman_id": "2026627d-3583-43f0-9b3a-ccad740bbbe4",
+		"name": "API ExamenPruebas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://node-red-nxdup.mybluemix.net/productos/{producto}/{numeroPagina}",
+					"protocol": "https",
+					"host": [
+						"node-red-nxdup",
+						"mybluemix",
+						"net"
+					],
+					"path": [
+						"productos",
+						"{producto}",
+						"{numeroPagina}"
+					]
+				},
+				"description": "http://{host}/productos/{producto}/{numeroPagina}\n\nDonde:\n\n{host} es: https://node-red-nxdup.mybluemix.net\n{producto} es la palabra de búsqueda. Ej. camisa, reloj, videojuego\n\n{numeroPagina}: 1, 2, 3"
+			},
+			"response": [
+				{
+					"name": "ProductsPage2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://node-red-nxdup.mybluemix.net/productos/camisas/2",
+							"protocol": "https",
+							"host": [
+								"node-red-nxdup",
+								"mybluemix",
+								"net"
+							],
+							"path": [
+								"productos",
+								"camisas",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Mar 2020 22:34:51 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"786-VV545w5ZiwZsa0ohQXPIvhU4oTM\"",
+							"name": "Etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Mensaje",
+							"value": "es una prueba",
+							"name": "Mensaje",
+							"description": "Custom header"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Backside-Transport",
+							"value": "OK OK",
+							"name": "X-Backside-Transport",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "9f474cea5e7a8b0be3ee6f9f",
+							"name": "X-Global-Transaction-ID",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":200,\"description\":\"All products\",\"data\":{\"type\":\"Products\",\"products\":[{\"ID\":11,\"TYPE\":\"Product\",\"SKU\":\"0011\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa de vestir Scappino cuello francés corte regular fit manga larga azul marino a rayas\",\"PRICE\":832,\"IMAGE\":\"https://i.imgur.com/ChPFYf1.jpg\"},{\"ID\":12,\"TYPE\":\"Product\",\"SKU\":\"0012\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Nautica corte regular fit\",\"PRICE\":1181,\"IMAGE\":\"https://i.imgur.com/IDOaR1M.jpg\"},{\"ID\":13,\"TYPE\":\"Product\",\"SKU\":\"0013\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Nautica corte regular fit\",\"PRICE\":2099,\"IMAGE\":\"https://i.imgur.com/1N8hw1l.jpg\"},{\"ID\":14,\"TYPE\":\"Product\",\"SKU\":\"0014\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Calvin Klein corte regular fit azul\",\"PRICE\":2099,\"IMAGE\":\"https://i.imgur.com/1N8hw1l.jpg\"},{\"ID\":15,\"TYPE\":\"Product\",\"SKU\":\"0015\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual JBE corte regular fit blanca\",\"PRICE\":424,\"IMAGE\":\"https://i.imgur.com/NvX76oA.jpg\"},{\"ID\":16,\"TYPE\":\"Product\",\"SKU\":\"0016\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual JBE corte regular fit blanca\",\"PRICE\":764,\"IMAGE\":\"https://i.imgur.com/mtohGWa.jpg\"},{\"ID\":17,\"TYPE\":\"Product\",\"SKU\":\"0017\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Ben Sherman corte regular fit azul obscuro con diseño gráfico\",\"PRICE\":1184,\"IMAGE\":\"https://i.imgur.com/1AyV1Sg.jpg\"},{\"ID\":18,\"TYPE\":\"Product\",\"SKU\":\"0018\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Ábito corte regular fit lino blanca\",\"PRICE\":721,\"IMAGE\":\"https://i.imgur.com/fbQlGRx.jpg\"},{\"ID\":19,\"TYPE\":\"Product\",\"SKU\":\"0019\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Dockers corte regular fit azul claro con diseño gráfico\",\"PRICE\":999,\"IMAGE\":\"https://i.imgur.com/eVTx1GR.jpg\"},{\"ID\":20,\"TYPE\":\"Product\",\"SKU\":\"0020\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Dockers corte regular fit azul claro con diseño gráfico\",\"PRICE\":999,\"IMAGE\":\"https://i.imgur.com/eVTx1GR.jpg\"}]}}"
+				},
+				{
+					"name": "ProductsPage1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://node-red-nxdup.mybluemix.net/productos/camisas/1",
+							"protocol": "https",
+							"host": [
+								"node-red-nxdup",
+								"mybluemix",
+								"net"
+							],
+							"path": [
+								"productos",
+								"camisas",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Mar 2020 22:33:03 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"769-uJog9xgNOio+ALwv5jGzHOkO0sI\"",
+							"name": "Etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Mensaje",
+							"value": "es una prueba",
+							"name": "Mensaje",
+							"description": "Custom header"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Backside-Transport",
+							"value": "OK OK",
+							"name": "X-Backside-Transport",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "6d6595795e7a8a9ed59f4cff",
+							"name": "X-Global-Transaction-ID",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":200,\"description\":\"All products\",\"data\":{\"type\":\"Products\",\"products\":[{\"ID\":1,\"TYPE\":\"Product\",\"SKU\":\"0001\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Original Penguin corte slim fit rosa a cuadros\",\"PRICE\":1314,\"IMAGE\":\"https://i.imgur.com/1cJm9Cs.jpg\"},{\"ID\":2,\"TYPE\":\"Product\",\"SKU\":\"0002\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual JBE con diseño grafico\",\"PRICE\":1314,\"IMAGE\":\"https://i.imgur.com/jZPjp39.jpg\"},{\"ID\":3,\"TYPE\":\"Product\",\"SKU\":\"0003\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Original Penguin corte slim fit blanca con diseño gráfico\",\"PRICE\":1614,\"IMAGE\":\"https://i.imgur.com/ZDrzW7x.jpg\"},{\"ID\":4,\"TYPE\":\"Product\",\"SKU\":\"0004\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Cremieux corte slim fit azul marino a cuadros\",\"PRICE\":1104,\"IMAGE\":\"https://i.imgur.com/hwKaVob.jpg\"},{\"ID\":5,\"TYPE\":\"Product\",\"SKU\":\"0005\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Calvin Klein corte regular fit a rayas\",\"PRICE\":2099,\"IMAGE\":\"https://i.imgur.com/0FVKDCz.jpg\"},{\"ID\":6,\"TYPE\":\"Product\",\"SKU\":\"0006\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Nautica corte regular fit azul con diseño gráfico\",\"PRICE\":2099,\"IMAGE\":\"https://i.imgur.com/zMjdTMe.jpg\"},{\"ID\":7,\"TYPE\":\"Product\",\"SKU\":\"0007\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual American Eagle corte slim fit agua\",\"PRICE\":674,\"IMAGE\":\"https://i.imgur.com/4eLu2ou.jpg\"},{\"ID\":8,\"TYPE\":\"Product\",\"SKU\":\"0008\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Cremieux corte regular fit azul jaspeada\",\"PRICE\":1104,\"IMAGE\":\"https://i.imgur.com/entiqLp.jpg\"},{\"ID\":9,\"TYPE\":\"Product\",\"SKU\":\"0009\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Ferrioni corte regular fit blanca\",\"PRICE\":849,\"IMAGE\":\"https://i.imgur.com/dPC1CR0.jpg\"},{\"ID\":10,\"TYPE\":\"Product\",\"SKU\":\"0010\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Costavana corte regular fit lino blanca\",\"PRICE\":721,\"IMAGE\":\"https://i.imgur.com/cOEPKse.jpg\"}]}}"
+				},
+				{
+					"name": "ProductsPage3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://node-red-nxdup.mybluemix.net/productos/camisas/3",
+							"protocol": "https",
+							"host": [
+								"node-red-nxdup",
+								"mybluemix",
+								"net"
+							],
+							"path": [
+								"productos",
+								"camisas",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Mar 2020 22:35:32 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"74a-EvXuAk6LEvyc0hrKbiPMkDz8wHg\"",
+							"name": "Etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Mensaje",
+							"value": "es una prueba",
+							"name": "Mensaje",
+							"description": "Custom header"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Backside-Transport",
+							"value": "OK OK",
+							"name": "X-Backside-Transport",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "cb47d0745e7a8b3488921037",
+							"name": "X-Global-Transaction-ID",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":200,\"description\":\"All products\",\"data\":{\"type\":\"Products\",\"products\":[{\"ID\":21,\"TYPE\":\"Product\",\"SKU\":\"0021\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Kenneth Cole corte slim fit azul cielo a cuadros\",\"PRICE\":1019,\"IMAGE\":\"https://i.imgur.com/lIBwVFO.jpg\"},{\"ID\":22,\"TYPE\":\"Product\",\"SKU\":\"0022\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual JBE corte regular fit azul claro a rayas\",\"PRICE\":424,\"IMAGE\":\"https://i.imgur.com/sDZsptn.jpg\"},{\"ID\":23,\"TYPE\":\"Product\",\"SKU\":\"0023\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Scappino corte regular fit negra\",\"PRICE\":1436,\"IMAGE\":\"https://i.imgur.com/vDF0x4F.jpg\"},{\"ID\":24,\"TYPE\":\"Product\",\"SKU\":\"0024\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Vans corte regular fit negra a cuadros\",\"PRICE\":899,\"IMAGE\":\"https://i.imgur.com/chHBNGH.jpg\"},{\"ID\":25,\"TYPE\":\"Product\",\"SKU\":\"0025\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Ben Sherman corte regular fit rosa\",\"PRICE\":934,\"IMAGE\":\"https://i.imgur.com/r4qS84x.jpg\"},{\"ID\":26,\"TYPE\":\"Product\",\"SKU\":\"0026\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual American Eagle corte regular fit morada a cuadros\",\"PRICE\":674,\"IMAGE\":\"https://i.imgur.com/dsAqKMj.jpg\"},{\"ID\":27,\"TYPE\":\"Product\",\"SKU\":\"0027\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Scappino corte slim fit a cuadros\",\"PRICE\":1521,\"IMAGE\":\"https://i.imgur.com/encyKEG.jpg\"},{\"ID\":28,\"TYPE\":\"Product\",\"SKU\":\"0028\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Puroego corte regular fit azul\",\"PRICE\":764,\"IMAGE\":\"https://i.imgur.com/9cTSCDl.jpg\"},{\"ID\":29,\"TYPE\":\"Product\",\"SKU\":\"0029\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa Banana Republic corte slim fit\",\"PRICE\":1124,\"IMAGE\":\"https://i.imgur.com/9WqqHvb.jpg\"},{\"ID\":30,\"TYPE\":\"Product\",\"SKU\":\"0030\",\"NAME\":\"Camisa\",\"DESCRIPTION\":\"Camisa casual Thats It corte regular fit lino gris a rayas\",\"PRICE\":509,\"IMAGE\":\"https://i.imgur.com/xGrs30P.jpg\"}]}}"
+				}
+			]
+		},
+		{
+			"name": "POST Visitors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://node-red-nxdup.mybluemix.net/visitors",
+					"protocol": "https",
+					"host": [
+						"node-red-nxdup",
+						"mybluemix",
+						"net"
+					],
+					"path": [
+						"visitors"
+					]
+				},
+				"description": "No requiere parámetros, devuelve simepre un dato fijo"
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://node-red-nxdup.mybluemix.net/visitors",
+							"protocol": "https",
+							"host": [
+								"node-red-nxdup",
+								"mybluemix",
+								"net"
+							],
+							"path": [
+								"visitors"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 Mar 2020 19:54:11 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"a6-hQ1m7U5ZPtka6+lJg9PDcoVLLSg\"",
+							"name": "Etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Backside-Transport",
+							"value": "OK OK",
+							"name": "X-Backside-Transport",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "0d28ff5e5e7bb6e36fce0b59",
+							"name": "X-Global-Transaction-ID",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":200,\"description\":\"New visitorId generated successfully\",\"data\":{\"type\":\"Visitor\",\"visitorId\":\"sd3a121lk\",\"welcome\":\"Hola, Candidato 01\",\"version\":\"v.0.0.1\"}}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}

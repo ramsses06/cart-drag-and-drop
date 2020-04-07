@@ -1,0 +1,6 @@
+.cardImage {
+  width: auto !important;
+  max-height: 200px;
+  display: flex;
+  align-self: center;
+}

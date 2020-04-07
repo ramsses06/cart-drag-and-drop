@@ -2,7 +2,11 @@
 import { combineReducers } from 'redux';
 
 import reduxReducer from './reduxReducer';
+import profileReducer from './profileReducer';
+import productsReducer from './productsReducer';
 
 export default combineReducers({
-  reduxReducer
+  reduxReducer,
+  profileReducer,
+  productsReducer
 });

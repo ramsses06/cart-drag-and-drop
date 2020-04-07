@@ -1,0 +1,11 @@
+.header-logo {
+  height: auto;
+  width: 100px;
+}
+
+.brand-link {
+  color: #333;
+}
+.brand-link:hover {
+  text-decoration: none;
+}
