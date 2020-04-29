@@ -1,7 +1,6 @@
 import React from 'react';
 import { Navbar, Button } from 'react-bootstrap';
 import './css/Header.css';
-import Logo from '../images/logo.png';
 import { NavLink } from 'react-router-dom';
 
 function Header (props) {
