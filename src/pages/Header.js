@@ -15,8 +15,8 @@ function Header (props) {
       <Navbar bg='light'>
         <Navbar.Brand>
           <NavLink className='brand-link' to={{ pathname: '/' }}>
-            <img className='header-logo' src={Logo} alt='' />
-            e-Commerce Gapsi
+            <span>LOGO</span>{' '}
+            ecommerce
           </NavLink>
         </Navbar.Brand>
         <Button onClick={handleClick}>
